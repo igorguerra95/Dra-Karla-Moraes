@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --color-quartz-50: #fdf4f8;
+  --color-quartz-100: #fce7f3;
+  --color-quartz-200: #fbcfe8;
+  --color-quartz-300: #f9a8d4;
+  --color-quartz-400: #f472b6;
+  --color-quartz-500: #e2559a;
+  --color-quartz-600: #c2387b;
+  --color-quartz-700: #9d174d;
+  --color-quartz-800: #7b143f;
+  --color-quartz-900: #550f2d;
+
+  --color-gold-50: #fcf9ee;
+  --color-gold-100: #f7f0d4;
+  --color-gold-200: #eddca0;
+  --color-gold-300: #e0c268;
+  --color-gold-400: #d4af37;
+  --color-gold-500: #ba9324;
+  --color-gold-600: #967318;
+  --color-gold-700: #735414;
+  --color-gold-800: #523b10;
+
+  --color-cream-50: #fffdfa;
+  --color-cream-100: #faf7f2;
+  --color-cream-200: #f4eee2;
+  --color-cream-300: #e9decf;
+  --color-cream-400: #d8c7b0;
+
+  --color-charcoal-900: #181518;
+  --color-charcoal-800: #262227;
+  --color-charcoal-700: #3f3941;
+  --color-charcoal-600: #5d5660;
+  --color-charcoal-500: #7e7682;
+}
+
+:root {
+  --primary-color: #f472b6;
+  --secondary-color: #d4af37;
+  --bg-sand: #FAF7F2;
+  --text-dark: #1E1A1E;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FAF7F2;
+  color: #1E1A1E;
+}
+
+h1, h2, h3, .font-serif {
+  font-family: var(--font-serif);
+  letter-spacing: -0.025em;
+}
+
+/* Custom delicate micro-shadows */
+.shadow-delicate {
+  box-shadow: 0 4px 20px -2px rgba(244, 114, 182, 0.08), 0 2px 6px -1px rgba(212, 175, 55, 0.05);
+}
+
+.shadow-elevation {
+  box-shadow: 0 16px 40px -10px rgba(157, 23, 77, 0.09), 0 4px 14px -3px rgba(212, 175, 55, 0.08);
+}
+
+.shadow-gold-subtle {
+  box-shadow: 0 10px 30px -5px rgba(212, 175, 55, 0.18);
+}
+
+/* Hairline borders */
+.hairline-border {
+  border: 1px solid rgba(235, 219, 205, 0.85);
+}
+
+.hairline-rose {
+  border: 1px solid rgba(244, 114, 182, 0.22);
+}
+
+.hairline-gold {
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Text gradients */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #A8811A 0%, #D4AF37 50%, #8E6E16 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rose-gold-gradient-text {
+  background: linear-gradient(135deg, #9D174D 0%, #E2559A 50%, #C9972E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Smooth background glows */
+.radial-glow-rose {
+  background: radial-gradient(circle at 50% 50%, rgba(244, 114, 182, 0.14) 0%, rgba(250, 247, 242, 0) 70%);
+}
+
+.radial-glow-gold {
+  background: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.12) 0%, rgba(250, 247, 242, 0) 70%);
+}
+
+/* Hide scrollbar for clean tab carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
